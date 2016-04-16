@@ -2,7 +2,7 @@
 
 enum {RED,GREEN,BLUE};
 void printf_color(int);
-void(*Sfunc(int a,void(*fptr)(int b)))(int c);
+void(*Sfunc(int ,void(*)(int )))(int);
 
 void print_color(int color)
 {
@@ -21,9 +21,9 @@ void print_color(int color)
 
 }
 
-void (*Sfunc(int a,void(*fptr)(int b)))(int c)
+void (*Sfunc(int a,void(*fptr)(int )))(int b)
 {
-	printf("Enter the signal function\n");
+	printf("Enter the signal function \n");
 	fptr(a);
 	
 	return fptr;
